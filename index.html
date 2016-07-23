@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quizz Buzz</title>
+
+    <!-- Stylesheets -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/bootstrapValidator.min.css">
+    <link href="css/style2.css" rel="stylesheet">
+    <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Javascripts for bootstrap -->
+    <script src="js/jquery-1.12.0.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/bootstrapValidator.min.js"></script>
+
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+    <script>
+        $( function() {
+            $( "#accordion" ).accordion({
+                collapsible: true
+            });
+        } );
+    </script>
+</head>
+<body>
+
+<!-- Header Navigation -->
+<div class="navbar navbar-inverse navbar-static-top head-nav" role="navigation" id="main-header">
+    <div class="container">
+        <div class="navbar-header header">
+            <button type="button" class="navbar-toggle visible-sm visible-xs" data-toggle="collapse"
+                    data-target=".navbar-collapse">
+                <span class="sr-only">Toggle Navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="index.html" class="navbar-brand text-uppercase" id="logo">QuizBuzz</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right menu">
+                <li ><a href="index.html" class="active">Home</a> </li>
+                <li><a href="JavaScript-quiz.html">JavaScript</a></li>
+                <li><a href="#" >HTML/CSS</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<!--Youtube Search key   AIzaSyAi3JFlFtVPo3QMTAFLD-HjMn54Mz-Ijcs     -->
+<div class="container ">
+    <div class="panel well well-lg" id="search-box">
+        <div class="panel-heading "><h2 class="col-md-12" id="search-box-heading">Search Tutorials Here!!!</h2></div>
+            <div class="panel-body ">
+                <div class="col-md-6">
+                    <form id="search-form" class="input-group input-search" onsubmit="return search()" action="https://www.googleapis.com/youtube/v3/search">
+                        <input type="search" class="form-control search-field" id="query" placeholder="Search for...">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="submit" id="search-button" name="search-button"><span class="glyphicon glyphicon-search"></span></button>
+                        </span>
+                    </form>
+                </div>
+                <ul id="results"></ul>
+                <div id="buttons"></div>
+            </div>
+    </div>
+</div>
+
+<div id="container" class="container ">
+    <div class="panel col-md-12 well" id="content-slider">
+        <div class="panel-heading title"><h2>Slider using jQuery</h2></div>
+        <div class="panel-body">
+            <ul class="faq">
+                <li class="q well"><span class="glyphicon glyphicon-menu-right"></span> HyperText Markup Language</li>
+                <li class="a well answer-bg">HTML can embed scripts written in languages such as JavaScript which affect the behavior of HTML web pages. HTML markup can also refer the browser to Cascading Style Sheets (CSS) to define the look and layout of text and other material. </li>
+
+                <li class="q well"><span class="glyphicon glyphicon-menu-right"></span> HyperText Markup Language</li>
+                <li class="a well answer-bg">HTML can embed scripts written in languages such as JavaScript which affect the behavior of HTML web pages. HTML markup can also refer the browser to Cascading Style Sheets (CSS) to define the look and layout of text and other material. </li>
+
+                <li class="q well"><span class="glyphicon glyphicon-menu-right"></span> HyperText Markup Language</li>
+                <li class="a well answer-bg">HTML can embed scripts written in languages such as JavaScript which affect the behavior of HTML web pages. HTML markup can also refer the browser to Cascading Style Sheets (CSS) to define the look and layout of text and other material. </li>
+
+                <li class="q well"><span class="glyphicon glyphicon-menu-right"></span> HyperText Markup Language</li>
+                <li class="a well answer-bg">HTML can embed scripts written in languages such as JavaScript which affect the behavior of HTML web pages. HTML markup can also refer the browser to Cascading Style Sheets (CSS) to define the look and layout of text and other material. </li>
+
+                <li class="q well"><span class="glyphicon glyphicon-menu-right"></span> HyperText Markup Language</li>
+                <li class="a well answer-bg">HTML can embed scripts written in languages such as JavaScript which affect the behavior of HTML web pages. HTML markup can also refer the browser to Cascading Style Sheets (CSS) to define the look and layout of text and other material. </li>
+            </ul>
+        </div>
+    </div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
